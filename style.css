@@ -502,6 +502,114 @@ h4 {
     color: var(--bg-dark);
 }
 
+/* --- Pricing Plans --- */
+.plan-card {
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: 60px;
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.plan-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.05);
+}
+
+.plan-card.featured {
+    background: var(--accent);
+    border-color: transparent;
+}
+
+.plan-card.featured h3,
+.plan-card.featured .price {
+    color: black;
+}
+
+.plan-header {
+    margin-bottom: 40px;
+}
+
+.plan-header h3 {
+    font-size: 32px;
+    margin-bottom: 16px;
+    color: var(--text-dark);
+}
+
+.plan-header p {
+    font-size: 14px;
+    opacity: 0.7;
+    line-height: 1.5;
+}
+
+.price {
+    font-size: 64px;
+    font-family: 'Outfit';
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.price span {
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+.plan-body {
+    flex-grow: 1;
+    margin-bottom: 40px;
+}
+
+.plan-body ul {
+    list-style: none;
+}
+
+.plan-body ul li {
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.plan-body ul li span {
+    opacity: 0.6;
+    font-weight: 400;
+}
+
+.guarantee-box {
+    margin-top: 24px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.plan-card.featured .guarantee-box {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.guarantee-box p {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.guarantee-box strong {
+    display: block;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+}
+
+.plan-footer {
+    margin-top: auto;
+}
+
 .faq-item {
     border-bottom: 2px solid var(--border);
     padding: 24px 0;
@@ -749,6 +857,17 @@ footer {
 
     .plan-card {
         padding: 40px 24px;
+    }
+
+    .price {
+        font-size: 48px;
+    }
+
+    .plan-body ul li {
+        padding: 12px 0;
+        font-size: 14px;
+        flex-wrap: wrap;
+        gap: 8px;
     }
 
     .add-on-item {
