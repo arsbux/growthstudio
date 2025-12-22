@@ -120,7 +120,7 @@ h4 {
     top: 12px;
     background: rgba(255, 255, 255, 0.96);
     padding: 8px 12px 8px 32px;
-    gap: 48px;
+    gap: 40px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
     border-color: rgba(0, 0, 0, 0.04);
 }
@@ -189,19 +189,27 @@ h4 {
         font-size: 18px;
     }
 
-    .nav-desktop-cta {
-        display: none;
-    }
-
     .nav-mobile-cta {
-        display: flex;
+        display: flex !important;
         margin-top: 24px;
         width: 100%;
     }
 }
 
 .nav-mobile-cta {
-    display: none;
+    display: none !important;
+}
+
+@media (min-width: 992px) {
+    .nav-desktop-cta {
+        display: inline-flex !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .nav-desktop-cta {
+        display: none !important;
+    }
 }
 
 .logo {
