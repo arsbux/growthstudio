@@ -188,6 +188,20 @@ h4 {
     .nav-links a {
         font-size: 18px;
     }
+
+    .nav-desktop-cta {
+        display: none;
+    }
+
+    .nav-mobile-cta {
+        display: flex;
+        margin-top: 24px;
+        width: 100%;
+    }
+}
+
+.nav-mobile-cta {
+    display: none;
 }
 
 .logo {
@@ -577,10 +591,6 @@ footer {
     width: 32px;
     height: 32px;
     object-fit: contain;
-    filter: brightness(1);
-    background: white;
-    padding: 6px;
-    border-radius: 8px;
 }
 
 .footer-col h4 {
