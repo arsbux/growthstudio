@@ -521,11 +521,22 @@ h4 {
 .plan-card.featured {
     background: var(--accent);
     border-color: transparent;
+    color: black;
 }
 
 .plan-card.featured h3,
-.plan-card.featured .price {
-    color: black;
+.plan-card.featured .price,
+.plan-card.featured .plan-header p,
+.plan-card.featured .plan-body ul li,
+.plan-card.featured .plan-body ul li span,
+.plan-card.featured .guarantee-box p,
+.plan-card.featured .guarantee-box strong {
+    color: black !important;
+    opacity: 1 !important;
+}
+
+.plan-card.featured .plan-body ul li {
+    border-bottom-color: rgba(0, 0, 0, 0.1);
 }
 
 .plan-header {
@@ -536,6 +547,8 @@ h4 {
     font-size: 32px;
     margin-bottom: 16px;
     color: var(--text-dark);
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
 }
 
 .plan-header p {
@@ -569,33 +582,35 @@ h4 {
 .plan-body ul li {
     padding: 16px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    font-weight: 600;
+    font-weight: 700;
     display: flex;
     justify-content: space-between;
     font-size: 14px;
+    color: var(--text-dark);
 }
 
 .plan-body ul li span {
-    opacity: 0.6;
-    font-weight: 400;
+    opacity: 0.5;
+    font-weight: 500;
 }
 
 .guarantee-box {
     margin-top: 24px;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.03);
+    padding: 24px;
+    background: #f8f8f8;
     border-radius: 16px;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .plan-card.featured .guarantee-box {
     background: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(0, 0, 0, 0.15);
 }
 
 .guarantee-box p {
     font-size: 13px;
     line-height: 1.5;
+    opacity: 0.8;
 }
 
 .guarantee-box strong {
@@ -604,6 +619,7 @@ h4 {
     text-transform: uppercase;
     font-size: 11px;
     letter-spacing: 0.05em;
+    font-weight: 900;
 }
 
 .plan-footer {
