@@ -39,13 +39,25 @@ document.addEventListener('DOMContentLoaded', () => {
         // Auto-close mobile menu on scroll
         if (navContainer && navContainer.classList.contains('active')) {
             navContainer.classList.remove('active');
+            mobileToggle.classList.remove('active');
         }
+    });
+
+    // Close mobile menu when nav links are clicked
+    const navLinksList = document.querySelectorAll('.nav-links a, .nav-mobile-cta');
+    navLinksList.forEach(link => {
+        link.addEventListener('click', () => {
+            if (navContainer && navContainer.classList.contains('active')) {
+                navContainer.classList.remove('active');
+                mobileToggle.classList.remove('active');
+            }
+        });
     });
 
 
 
     // Simple reveal animation
-    const reveals = document.querySelectorAll('.card-dayos, .offer-box, .dark-section');
+    const reveals = document.querySelectorAll('.card-dayos, .offer-box, .plan-card, .dark-section');
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
