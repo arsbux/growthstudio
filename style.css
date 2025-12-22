@@ -511,6 +511,7 @@ h4 {
     display: flex;
     flex-direction: column;
     transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    color: black;
 }
 
 .plan-card:hover {
@@ -562,12 +563,14 @@ h4 {
     font-family: 'Outfit';
     font-weight: 800;
     margin-bottom: 8px;
+    color: black;
 }
 
 .price span {
     font-size: 18px;
     font-weight: 600;
-    opacity: 0.6;
+    opacity: 0.4;
+    color: black;
 }
 
 .plan-body {
